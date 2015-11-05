@@ -1,10 +1,9 @@
 
   
-**Introduction**  
+#**Introduction**  
 This article discusses the features introduced in Microsoft .Net Framework 2.0, 3.0, 3.5, 4.0 and the newly introduced 4.5 framework.   
   
-**.Net Framework 2.0 Features  
-**  
+#**.Net Framework 2.0 Features**  
 **ADO.NET**  
 New features in ADO.NET include support for user-defined types (UDT), asynchronous database operations, XML data types, large value types, snapshot isolation, and new attributes that allow applications to support multiple active result sets (MARS) with SQL Server 2005.  
   
@@ -24,7 +23,7 @@ It is now possible to partially validate a DOM tree loaded within an instance of
   
 It is now possible to modify a DOM tree stored in an XmlDocument instance through the XPathNavigator cursor API.  
   
-**.Net Framework 3.0/3.5 Features**  
+#**.Net Framework 3.0/3.5 Features**  
 **Windows Presentation Foundation (WPF)**  
   
 Windows Presentation Foundation (WPF) is a next-generation presentation system for building Windows client applications. The core of WPF is a resolution-independent and vector-based rendering engine that is built to take advantage of modern graphics hardware.  
@@ -63,7 +62,7 @@ Some core new features and improvements are implemented in .Net 3.0/3.5; they ar
 6. Object and Collection Initializers
 7. Lambda Expressions  
 
-**.Net Framework 4.0 Features**  
+#**.Net Framework 4.0 Features**  
 **Application Compatibility and Deployment**  
   
 The .NET Framework 4 is highly compatible with applications that are built with earlier .NET Framework versions, except for some changes that were made to improve security, standards compliance, correctness, reliability, and performance.  
@@ -138,7 +137,7 @@ Windows Workflow Foundation (WF) provides improvements in the following areas:
 - Rich composite activity options: Workflows benefit from new flow-control activities that model traditional flow-control structures, such as Flowchart, TryCatch, and Switch&lt;T&gt;.
 - Expanded built-in activity library: New features of the activity library include new flow-control activities, activities for manipulating member data, and activities for controlling transactions.
 
-**.Net Framework 4.5 Features**  
+#**.Net Framework 4.5 Features**  
   
 **.NET for Windows Store Apps**  
   
