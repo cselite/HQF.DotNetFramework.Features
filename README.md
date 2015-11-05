@@ -75,3 +75,5 @@ Windows Presentation Foundation (WPF)
 
 **6. Conclusion**  
 
+[See more detail](intruduction.md)
+
