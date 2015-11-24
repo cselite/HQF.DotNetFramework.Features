@@ -20,7 +20,7 @@ If GC.Collect() is omitted then the LOH compaction will happen when the next LOH
 
 Microsoft deliberately chose not to compact the LOH by default when it is garbage collected (unlike the small object heaps) because they believe that the performance impact of regularly performing a LOH compaction outweighs the benefits of doing so. In an MSDN blog announcing the release of .NET 4.5.1, the Microsoft .NET team give the following warning concerning using LOH compaction:  
 
-“`LOH compaction` can be an expensive operation and should only be used after significant performance analysis, both to determine that LOH fragmentation is a problem, but also to decide when to request compaction.”  
+>“`LOH compaction` can be an expensive operation and should only be used after significant performance analysis, both to determine that LOH fragmentation is a problem, but also to decide when to request compaction.”  
 Here I will seek to explain in more detail what actually happens during a LOH compaction, and clarify when it is appropriate to use it.  
 
 ###So when should you use compaction?
