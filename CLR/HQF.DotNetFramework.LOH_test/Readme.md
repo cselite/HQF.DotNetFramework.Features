@@ -14,9 +14,9 @@ Generally, solving LOH fragmentation problems requires following one of the thre
 Each of these solutions are either difficult, inelegant, laborious, or a combination thereof. However, in .NET 4.5.1 the .NET team at Microsoft has provided another possibility by adding the ability to easily do a one-off garbage collection, followed by a LOH compaction, with the following code:  
 ```c#
 GCSettings.LargeObjectHeapCompactionMode = GCLargeObjectHeapCompactionMode.CompactOnce; GC.Collect(); // This can be omitted
-
-If GC.Collect() is omitted then the LOH compaction will happen when the next LOH garbage collection occurs naturally. After this modified garbage collection has finished the application will continue running as before (i.e. with no LOH compactions).
 ```
+If `GC.Collect()` is omitted then the LOH compaction will happen when the next LOH garbage collection occurs naturally. After this modified garbage collection has finished the application will continue running as before (i.e. with no LOH compactions).  
+
 
 Microsoft deliberately chose not to compact the LOH by default when it is garbage collected (unlike the small object heaps) because they believe that the performance impact of regularly performing a LOH compaction outweighs the benefits of doing so. In an MSDN blog announcing the release of .NET 4.5.1, the Microsoft .NET team give the following warning concerning using LOH compaction:  
 
